@@ -13,7 +13,6 @@
             --dark: #1e293b;
             --light: #f8fafc;
         }
-        
         body {
             font-family: 'Inter', sans-serif;
             background-color: #000000;
@@ -21,28 +20,23 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-        
         .gradient-text {
             background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
-        
         .card {
             transition: all 0.3s ease;
             transform: translateY(0);
         }
-        
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        
         .nav-link {
             position: relative;
         }
-        
         .nav-link::after {
             content: '';
             position: absolute;
@@ -53,57 +47,45 @@
             background-color: var(--primary);
             transition: width 0.3s ease;
         }
-        
         .nav-link:hover::after {
             width: 100%;
         }
-        
         .hero-section {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
-        
         .tech-icon {
             transition: all 0.3s ease;
         }
-        
         .tech-icon:hover {
             transform: scale(1.2);
         }
-        
         .project-card {
             perspective: 1000px;
         }
-        
         .project-inner {
             transition: transform 0.6s;
             transform-style: preserve-3d;
         }
-        
         .project-card:hover .project-inner {
             transform: rotateY(180deg);
         }
-        
         .project-front, .project-back {
             backface-visibility: hidden;
             position: absolute;
             width: 100%;
             height: 100%;
         }
-        
         .project-back {
             transform: rotateY(180deg);
         }
-        
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
-        
         .floating {
             animation: float 3s ease-in-out infinite;
         }
-        
         .typewriter {
             overflow: hidden;
             border-right: 3px solid var(--primary);
@@ -114,17 +96,14 @@
                 typing 3.5s steps(40, end),
                 blink-caret .75s step-end infinite;
         }
-        
-        @keyframes typing {
+         @keyframes typing {
             from { width: 0 }
             to { width: 100% }
         }
-        
         @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: var(--primary); }
         }
-        
         .scroll-down {
             position: absolute;
             bottom: 20px;
@@ -133,7 +112,6 @@
             color: var(--primary);
             animation: bounce 2s infinite;
         }
-        
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
             40% {transform: translateY(-20px);}
@@ -167,8 +145,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-black shadow-lg rounded-lg mx-4 mb-4">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
                 <a href="#home" class="nav-link text-gray-300 hover:text-indigo-400 block px-3 py-2 text-base font-medium">Home</a>
@@ -179,7 +155,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home" class="hero-section min-h-screen flex items-center justify-center pt-16 bg-black relative overflow-hidden">
         <!-- Blurred floating circles background -->
@@ -220,12 +195,10 @@
                 </div>
             </div>
         </div>
-        
         <a href="#about" class="scroll-down">
             <i class="fas fa-chevron-down text-2xl"></i>
         </a>
     </section>
-
     <!-- About Section -->
     <section id="about" class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -235,7 +208,6 @@
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"></div>
             </div>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
                     <h3 class="text-2xl font-semibold text-white">Who am I?</h3>
@@ -251,7 +223,6 @@
                         When I'm not coding, you can find me contributing to open-source projects, 
                         reading about new technologies, or hiking in the mountains.
                     </p>
-                    
                     <div class="flex flex-wrap gap-4 pt-4">
                         <div class="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full">
                             <i class="fas fa-map-marker-alt text-indigo-400"></i>
@@ -267,7 +238,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="grid grid-cols-2 gap-4">
                     <div class="card bg-gray-800 p-6 rounded-xl shadow-md border border-gray-700">
                         <div class="text-indigo-400 text-3xl mb-3">
@@ -309,7 +279,6 @@
             </div>
         </div>
     </section>
-
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -319,7 +288,6 @@
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"></div>
             </div>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-semibold text-white mb-6">Technologies I Work With</h3>
@@ -358,7 +326,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div>
                     <h3 class="text-2xl font-semibold text-white mb-6">My Expertise</h3>
                     <div class="space-y-6">
@@ -412,7 +379,6 @@
             </div>
         </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -422,7 +388,6 @@
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"></div>
             </div>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <div class="project-card h-80 rounded-xl overflow-hidden relative">
@@ -449,8 +414,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
                 <!-- Project 2 -->
                 <div class="project-card h-80 rounded-xl overflow-hidden relative">
                     <div class="project-inner w-full h-full">
@@ -476,8 +440,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
                 <!-- Project 3 -->
                 <div class="project-card h-80 rounded-xl overflow-hidden relative">
                     <div class="project-inner w-full h-full">
@@ -507,7 +470,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -517,15 +479,13 @@
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"></div>
             </div>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div class="space-y-6">
                     <h3 class="text-2xl font-semibold text-white">Let's Work Together</h3>
                     <p class="text-gray-300 leading-relaxed">
                         I'm always interested in new opportunities and exciting projects. 
                         Whether you have a question or just want to say hi, feel free to reach out!
-                    </p>
-                    
+                    </p>  
                     <div class="space-y-4">
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
@@ -536,7 +496,6 @@
                                 <p class="text-gray-300">rolandtimfuga@gmail.com</p>
                             </div>
                         </div>
-                        
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-phone text-white"></i>
@@ -546,7 +505,6 @@
                                 <p class="text-gray-300">+84.......</p>
                             </div>
                         </div>
-                        
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-map-marker-alt text-white"></i>
@@ -557,7 +515,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="flex space-x-4 pt-4">
                         <a href="#" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition duration-300">
                             <i class="fab fa-github text-white text-xl"></i>
@@ -573,24 +530,20 @@
                         </a>
                     </div>
                 </div>
-                
                 <div class="bg-gray-800 p-8 rounded-xl">
                     <form class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
                             <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your name">
-                        </div>
-                        
+                        </div>                   
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
                             <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="your@email.com">
-                        </div>
-                        
+                        </div>                    
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
                             <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your message"></textarea>
-                        </div>
-                        
+                        </div>  
                         <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition duration-300">
                             Send Message
                         </button>
@@ -599,7 +552,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-black py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -608,16 +560,13 @@
             </div>
         </div>
     </footer>
-
     <script>
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
